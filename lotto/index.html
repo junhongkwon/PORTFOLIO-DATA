@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >LOTTO645</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    
+    <div class='header'>
+        <h1 class='LOTTO645'>LOTTO 645</h1>
+    </div>
+    <div class="box">
+    <div class='numberAndBonus'>
+    <div id='result' class='bonus'></div>
+    <div id='plusID' class="plus">➕</div>
+    
+    <!-- <div class='bonus'></div> -->
+    </div>
+    <div class='numbers'>
+    <div class='enterNumberOne'>
+        <input class='enterNumberOneClass'type="text" onkeyup="validate(num1.value)" id="enterNumber1" maxlength="2">
+        <input class='enterNumberOneClass'type="text" onkeyup="validate(num2.value)" id="enterNumber2" maxlength="2">
+        <input class='enterNumberOneClass'type="text" onkeyup="validate(num3.value)" id="enterNumber3" maxlength="2">
+        <input class='enterNumberOneClass'type="text" onkeyup="validate(num4.value)" id="enterNumber4" maxlength="2"> 
+        <input class='enterNumberOneClass'type="text" onkeyup="validate(num5.value)" id="enterNumber5" maxlength="2">
+        <input class='enterNumberOneClass'type="text" onkeyup="validate(num6.value)" id="enterNumber6" maxlength="2">
+    </div>
+    </div>
+    <div id=lottoResult></div>
+    <div class="myNumberDivs">
+    <div class="myNumberDiv">
+        <input type="text" 
+               id="myNumberText"      
+               style=border:none;
+               border-right:0px; 
+               border-top:0px; 
+               border-left:0px; 
+               border-bottom:0px;>
+   </div>
+   </div>
+    <div class="buttons" >
+
+        <input type ="button" 
+        value="generate"  
+        id='generateId' 
+        class='generateBut'
+        onclick=NumberPainting();>
+        </button>
+
+    <input type ="button" 
+           value="reset"  
+           id='resetId' 
+           class='resetBut'>
+    </button>
+
+    <input type ="button" 
+           value="result" 
+           id='resultId' 
+           class='resultBut'
+           onclick=lottoResultFunction();>
+    </button>
+    </div>
+    </div>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

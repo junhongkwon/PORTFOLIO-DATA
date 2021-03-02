@@ -1,0 +1,239 @@
+* {
+    margin:0;
+    padding:0;
+}   
+
+
+.header {
+    width:100%;
+    background: #3b5999;
+    color:#fff;
+    text-align:center;
+    padding:1.5rem;
+}
+
+.generateBut{
+    width:95.55px;
+    height:40px;
+    background-color: #F5F5F5;  
+    cursor: pointer;
+}
+
+
+.resetBut{
+    width:95.55px;
+    height:40px;
+    background-color: #F5F5F5;  
+    cursor: pointer;
+}
+
+.resultBut{
+    width:95.55px;
+    height:40px;
+    background-color: #007BC3;  
+    color:white;
+    cursor: pointer;
+}
+
+.enterNumberOne{
+    position: relative;
+    top:200px;
+    left:610px;
+    width:500px;
+}
+
+.enterNumberTwo{
+    position: relative;
+    top:210px;
+    left:610px;
+    width:500px;
+}
+
+
+
+.enterNumberThree{
+    position: relative;
+    top:220px;
+    left:610px;
+    width:500px;
+}
+
+.enterNumberFour{
+    position: relative;
+    top:230px;
+    left:610px;
+    width:500px;
+}
+
+.enterNumberFive{
+    position: relative;
+    top:240px;
+    left:610px;
+    width:500px;
+}
+
+.buttons{
+    position: relative;
+    top:235px;
+    left:620px;
+    width:350px;
+}
+
+.myNumberDiv{
+    position: relative;
+    top:250px;
+    left:910px; 
+    width:210px;
+    
+}
+
+
+
+.myNumberDivs{
+    position: relative;
+    top:10px;
+    left:20px; 
+    width:210px;
+    
+}
+.numberAndBonus{
+    position: relative;
+    top:100px;
+    left:510px;
+    width:600px;
+    
+}
+
+.plus{
+    position: relative;
+    top:-40px;
+    left:452px;
+    font-size:16px;
+    display:none;
+}
+#myNumberText{
+    font-size:20px;
+    width:160px;
+    color:black;
+    position: relative;
+    top:-105px;
+}
+
+#myNumberTextTwo{
+    font-size:20px;
+    width:160px;
+    color:black;
+    position: relative;
+    top:-130px;
+}
+
+#myNumberTextThree{
+    font-size:20px;
+    width:160px;
+    color:black;
+    position: relative;
+    top:-130px;
+}
+
+#myNumberTextFour{
+    font-size:20px;
+    width:160px;
+    color:black;
+    position: relative;
+    top:-130px;
+}
+
+#myNumberTextFive{
+    font-size:20px;
+    width:160px;
+    color:black;
+    position: relative;
+    top:-120px;
+}
+
+#lottoResult{
+    position: relative;
+    top:180px;
+    left:1100px;
+    font-size:20px;
+    color:black;
+    width:150px;
+}
+#lottoResultTwo{
+    position: relative;
+    top:40px;
+    left:1100px;
+    font-size:20px;
+    color:black;
+    width:150px;
+}
+#lottoResultThree{
+    position: relative;
+    top:65px;
+    left:1100px;
+    font-size:20px;
+    color:black;
+    width:150px;
+}
+#lottoResultFour{
+    position: relative;
+    top:90px;
+    left:1100px;
+    font-size:20px;
+    color:black;
+    width:150px;
+}
+#lottoResultFive{
+    position: relative;
+    top:115px;
+    left:1100px;
+    font-size:20px;
+    color:black;
+    width:150px;
+}
+.numbers{
+    position: relative;
+    top:10px;
+    left:18px;
+}
+
+.enterNumberOneClass{
+    width:34px;
+    height:34px;
+    font-size:16px;
+    text-align:center;
+    margin-right:5px;
+}
+
+.enterNumberTwoClass{
+    width:34px;
+    height:34px;
+    font-size:16px;
+    text-align:center;
+    margin-right:5px;
+}
+
+.enterNumberThreeClass{
+    width:34px;
+    height:34px;
+    font-size:16px;
+    text-align:center;
+    margin-right:5px;
+}
+
+.enterNumberFourClass{
+    width:34px;
+    height:34px;
+    font-size:16px;
+    text-align:center;
+    margin-right:5px;
+}
+
+.enterNumberFiveClass{
+    width:34px;
+    height:34px;
+    font-size:16px;
+    text-align:center;
+    margin-right:5px;
+}
+
