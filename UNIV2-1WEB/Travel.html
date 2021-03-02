@@ -1,0 +1,117 @@
+﻿<!doctype html>
+<html>
+<head>
+<h1 align=center> Travel </h1>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+
+
+$(document).ready(function(){
+    $("#travel2").click(function(){
+        $("#contents").slideToggle();
+    });
+});
+
+
+$(document).ready(function(){
+    $("#travel3").mouseover(function(){
+        $("#contents2").slideDown();
+    });
+    $("#travel3").mouseout(function(){
+        $("#contents2").slideUp();
+    });
+});
+
+$(document).ready(function(){
+    $("#travel4").click(function(){
+        $("#contents3").slideToggle();
+    });
+});
+
+
+
+
+
+</script>
+
+            <style>
+                  body {font-size:13pt; 
+				       font-family:Lucida Console;
+				       color:white;
+				       background:url(IMAGE/travelBack.jpg);
+				        background-size:cover;}
+				  
+				  li      {list-style-type:upper-alpha;	
+                          }
+			 
+			 #button2{position:absolute;
+                     left:50px;
+                     top:30px;
+                     padding:10px 10px 10px 10px;		 
+	   	             }
+
+
+  				  
+           </style>
+
+
+<body>
+
+      <ul>
+	     <li id=travel2><b> Travel in Yeosu</b></li>
+		                   (Click to show & Click to hide)
+		 <div id=contents>
+		 <br><br>
+		 <image src="IMAGE/YEO1.jpg" width="230" height="250">
+         <image src="IMAGE/YEO2.jpg" width="230" height="250">
+		 <image src="IMAGE/YEO3.jpg" width="230" height="250">
+         <p>위 사진들은 제가 여수에 여행갔을 때 찍은 사진들입니다. 여수시 돌산읍에 있는<br>
+		 돌산공원과 여수밤바다를 찍은 사진인데, 겨울철에 가서 공기는 좀 찼지만 밤풍경과 경치가 좋았던 것 같습니다.<br>
+		 풍경뿐 아니라 여수는 먹거리 또한 많이 즐비 해있습니다. 기회가 된다면 다시 한번 더 가보고 싶은 여행지입니다.<br>
+		 </p>
+		 </div>
+		 <br><br><br>
+		 
+		 
+		 
+		 
+		 
+		 
+		 <li id=travel3><b> Travel in Busan</b></li>
+		                    (Put your mouse here to show & hide)
+		  <div id=contents2>
+		 <br><br>
+		 <image src="IMAGE/BU1.jpg" width="230" height="250">
+         <image src="IMAGE/BU2.jpg" width="230" height="250">
+		 <image src="IMAGE/BU3.jpg" width="230" height="250"><br>
+         <image src="IMAGE/BU4.jpg" width="230" height="250">
+		 <image src="IMAGE/BU5.jpg" width="230" height="250">
+		 <p>친구들과 함께 부산여행을 갔을때 찍었던 사진들입니다. 부산에서는 볼거리도 많았지만<br>
+		 먹거리들이 많이 있었습니다. 위 사진은 밤에 찍은 부산 야경사진과 다음날 낮에 찍은 부산바다 사진입니다.<br>
+		 부산여행에서 저는 태종대가 가장 기억에 남습니다. 태종대 전망에서 바다풍경을 볼 수 있고,<br>
+		 또 경치또한 좋았던 기억이 남습니다.<br>
+		 </p>
+		 </div>
+         <br><br><br>
+		 
+		 
+		 <li id=travel4><b> Next trip</b></li>
+		                    (Click to show & Click to hide)
+		 <div id=contents3>
+		 <p>저는 일본여행을 한번 더 가보고 싶습니다. 고등학생때 학교에서 일본으로 여행을 갔었던 적이 있었는데,<br>
+		    일본문화에 대해 많이 알게 되었고, 오래되서 잘 기억은 나지 않지만 벳부 지옥온천이 가장 기억에 남습니다.<br>
+			여러개의 온천을 돌아다녔는데, 관광객들도 많이 오고 온천풍경도 좋았던 기억이 남습니다.<br>
+			그래서 다음번에 기회가 된다면 꼭 다시한번 일본여행을 가보고 싶습니다.</p>
+				<image src="IMAGE/JAP1.jpg" width="230" height="250">
+                <image src="IMAGE/JAP2.jpg" width="230" height="250">
+		        <image src="IMAGE/JAP3.jpg" width="230" height="250"><br>
+				
+		 </div>	
+				
+		 
+	  </ul>
+	  
+		 
+</body>
+</html>

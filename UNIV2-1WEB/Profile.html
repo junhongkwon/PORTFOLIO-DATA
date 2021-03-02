@@ -1,0 +1,298 @@
+﻿<!doctype html>
+<html>
+<head>
+<script>
+
+function toggleFunction(){
+     
+	   
+	   
+	   if( document.getElementById("write2").style.display=="none" )
+	   {
+	    document.getElementById("write2").style.display="block";
+	   }
+	   else if( document.getElementById("write2").style.display=="block" )
+	   {
+	    document.getElementById("write2").style.display="none";
+	   }
+	   else
+	   {
+	    document.getElementById("write2").style.display="none";
+       }
+} 
+function toggleFunction2(){
+      
+	  if( document.getElementById("timetable2").style.display=="none" )
+	   {
+	    document.getElementById("timetable2").style.display="block";
+	   }
+	   else if( document.getElementById("timetable2").style.display=="block" )
+	   {
+	    document.getElementById("timetable2").style.display="none";
+	   }
+	   else
+	   {
+	    document.getElementById("timetable2").style.display="none";
+       }
+}	   
+
+	   
+</script>
+
+<style> 
+body {font-size:12pt;
+font-family:Lucida Console;
+ background:url(IMAGE/profileBack.jpg);
+ background-size:cover;}
+li{list-style-type:suqare;
+  }
+#write{font-family:맑은고딕;
+      }
+table{border-collapse:collapse;
+      text-align:center;
+	  width:80%;
+	  position:relative;
+	  left:50px;
+	  color:white;
+      }
+#timetable{font-size:20px;
+           color:white;
+          }	  
+
+#button2{position:relative;
+         left:250px;
+		 bottom:35px;
+		 padding:10px 10px 10px 10px;
+		}
+#button3{position:absolute;
+         left:50px;
+         top:100px;
+         padding:10px 10px 10px 10px;		 
+		}
+		
+#button4{position:absolute;
+         right:50px;
+         top:100px;
+         padding:10px 10px 10px 10px;		 
+		}		
+		
+		
+</style>
+</head>
+<body>
+<div>
+
+
+
+<h1 align=center><p><font color="white">self-introduction.</font></p></h1><br><br><br>
+<p><font color="white">
+<ul> <b>Profile</b><br><br> <button id=button2 onclick=toggleFunction()> 프로필열기/닫기 </button>
+    <div id=write2>
+      <li>이름   : 권준홍 (Kwon jun hong)</li><br>
+      <li>나이   : 24세(1995년생)</li><br>
+      <li>키     : 173cm</li><br>
+      <li>몸무게 : 65kg</li><br>
+      <li>혈액형 : O형</li><br>
+      <li>소속   : 건국대학교 글로컬캠퍼스 과학기술대학 컴퓨터공학과</li><br>
+      <li>취미   : 음악감상,축구,운동</li><br>
+      <li>좌우명 : 오늘은 당신의 남은 인생의 첫날이다</li><br><hr><br>
+	 </div>
+</ul>
+</p></font>
+
+
+<p><font color="white">
+<ul> <b>Plans for the future</b><br><br>
+
+<li>저는 현재 건국대학교 글로컬캠퍼스 과학기술대학 소속으로 컴퓨터공학을
+전공하고 있습니다.<br> 현재 학과에서 이루어지는 전공과목과 또 교양과목을
+배움으로써 많은 공부를 하고 있습니다.<br> 또 변화하는 글로벌시대에 걸맞게
+토익또한 공부를 하고 있으며, 대학교에서 이루어지는 공부와<br> 자격증 공부를
+틈틈히 겸비해 나중에 정보보안쪽으로 종사하고 싶습니다.</li>
+
+<image src="IMAGE/Security.jpg" height="270" width="250">
+<image src="IMAGE/Security2.jpg" height="270" width="250">
+</ul>
+</font></p>
+</div>
+<hr>
+  <p id=timetable> &nbsp;&nbsp;&nbsp;&nbsp;My Timetable</p> <button id=button2 onclick=toggleFunction2()> 시간표열기/닫기 </button>
+  <div id=timetable2>
+     <table border=1>
+      <tr>
+	      <td> </td>
+		  <td>월</td>
+		  <td>화</td>
+		  <td>수</td>
+		  <td>목</td>
+		  <td>금</td>
+	  </tr>
+	  <tr>
+          <td>09:00~09:30</td>
+          <td> </td>		  
+		  <td rowspan=6>KUGEP3</td>
+		  <td rowspan=3>웹프로그래밍</td>
+		  <td> </td>
+		  <td> </td>
+	  </tr>
+	      <td>09:30~10:00</td>
+		  <td> </td>		  
+		 
+		 
+		  <td> </td>
+		  <td> </td>
+	  <tr>
+	      <td>10:00~10:30</td>
+		  <td> </td>		  
+		  
+		  
+		  <td> </td>
+		  <td> </td>
+	  </tr>
+	  <tr>
+	      <td>10:30~11:00</td>
+		  <td> </td>		  
+		 
+		  <td> </td>
+		  <td> </td>
+		  <td> </td>
+	  </tr>
+	   <tr>
+	      <td>11:00~11:30</td>
+		  <td> </td>		  
+		 
+		  <td> </td>
+		  <td> </td>
+		  <td> </td>
+	  </tr>
+	  <tr>
+	      <td>11:30~12:00</td>
+		  <td> </td>		  
+		  
+		  <td> </td>
+		  <td> </td>
+		  <td> </td>
+	  </tr>
+	   <tr>
+	      <td>12:00~12:30</td>
+		  <td rowspan=3>Java프로그래밍1</td>		  
+		  <td> </td>
+		  <td> </td>
+		  <td> </td>
+		  <td rowspan=4>클래식음악여행</td>
+	  </tr>
+	  <tr>
+	      <td>12:30~13:00</td>	  		  
+		  <td> </td>
+		  <td> </td>
+		  <td> </td>
+		 
+	  </tr>
+	   <tr>
+	      <td>13:00~13:30</td>		  
+		  <td> </td>
+		  <td> </td>
+		  <td> </td>
+		  
+	  </tr>
+	  <tr>
+	      <td>13:30~14:00</td>
+		  <td> </td>		  
+		  <td> </td>
+		  <td> </td>
+		  <td> </td>
+		 
+	  </tr>
+	   <tr>
+	      <td>14:00~14:30</td>
+		 <td> </td>		  
+		  <td> </td>
+		  <td> </td>
+		  <td> </td>
+		  <td> </td>
+	  </tr>
+	  <tr>
+	      <td>14:30~15:00</td>
+		  <td> </td>		  
+		  <td> </td>
+		  <td> </td>
+		  <td> </td>
+		  <td> </td>
+	  </tr>
+	   <tr>
+	      <td>15:00~15:30</td>
+		  <td rowspan=3>웹프로그래밍</td>		  
+		  <td rowspan=3>JAVA프로그래밍1</td>
+		  <td rowspan=4>중원역사문화론(충주의삶과문화)</td>
+		  <td rowspan=4>프로그래밍활용</td>
+		  <td> </td>
+	  </tr>
+	  <tr>
+	      <td>15:30~16:00</td>				  
+		 		 
+		 
+		  <td> </td>
+	  </tr>
+	   <tr>
+	      <td>16:00~16:30</td>		  
+		 		 
+		 
+		  <td> </td>
+	  </tr>
+	  <tr>
+	      <td>16:30~17:00</td>
+		 <td> </td>		  
+		  <td> </td>
+		 
+		 
+		  <td> </td>
+	  </tr>
+	   <tr>
+	      <td>17:00~17:30</td>
+		  <td> </td>		  
+		  <td> </td>
+		  <td> </td>
+		  <td> </td>
+		  <td> </td>
+	  </tr>
+	  <tr>
+	      <td>17:30~18:00</td>
+		  <td> </td>		  
+		  <td> </td>
+		  <td> </td>
+		  <td> </td>
+		  <td> </td>
+	  </tr>
+	   <tr>
+	      <td>18:00~18:30</td>
+		  <td rowspan=4>기초영어문장학습</td>		  
+		  <td rowspan=4>디자인이야기 & Cogito인성함양1 </td>
+		  <td> </td>
+		  <td> </td>
+		  <td> </td>
+	  </tr>
+	  <tr>
+	      <td>18:30~19:00</td>
+		 		  
+		
+		  <td> </td>
+		  <td> </td>
+		  <td> </td>
+	  </tr> <tr>
+	      <td>19:00~19:30</td>
+		 		  
+		 
+		  <td> </td>
+		  <td> </td>
+		  <td> </td>
+	  </tr>
+	  <tr>
+	      <td>19:30~20:00</td>		  
+		  <td> </td>
+		  <td> </td>
+		  <td> </td>
+	  </tr>
+	  </table>
+     </div>
+</body>
+</html>

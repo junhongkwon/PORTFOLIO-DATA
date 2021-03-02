@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+      <title> 메인 </title>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hover2").hover(function(){
+        $(this).css({"color":"#F6F6AF","font-weight":"bold"});
+    },
+    function(){
+        $(this).css({"color":"white","font-weight":"normal"});
+    }); 
+});
+
+
+
+</script>	  
+<script>
+     
+	 
+	 
+	 
+	 
+	 
+	 function timefunction(){
+	 
+     var time = new Date();
+	 
+	 var year = time.getFullYear();
+	 var month = time.getMonth();
+	 var date = time.getDate();
+	
+	 
+	 var h = time.getHours()
+	 var m = time.getMinutes();
+	 var s = time.getSeconds();
+	 
+	 var time2 =  year + "년 " + (month + 1 ) + "월 " + date + "일 " + "<br>" + h + "시 " + m + "분 " + s + "초 입니다.";
+	 
+     document.getElementById("a").innerHTML=time2;
+     
+     setTimeout(function() {timefunction()}, 1000);
+	 
+ 
+	 
+     }
+ 
+ $(document).ready(function(){
+    $("#a").hover(function(){
+        $(this).animate({"font-size":"30","color":"white"});
+    },
+    function(){
+        $(this).css({"width":"350px"});
+    }); 
+});
+	 
+</script>	  
+<style>	  
+           #one {font-size:38pt; font-family:Lucida Console; margin:auto;}  
+           a    {text-decoration : none;
+                 color:white;
+	            }
+	  
+           #field{width:30%;
+		          position:relative;
+				  left:90px;
+				  top:170px;
+				  border:2px solid white;
+				  font-size:15px;
+				  font-family:Arial;
+                 }	  
+           a:hover{color:#F6F6AF;
+                 }
+				 
+				 
+           #a{position:relative;
+				  left:90px;
+				  top:170px;
+			  font-size:25px;
+		     }
+</style>	  
+	  
+	  
+</head>
+
+<body onload=timefunction() background="IMAGE/mainBack.jpg" width=100% height=100%>
+<br>
+<div id=one>
+<font color="white"><p><a href="http://cs.kku.ac.kr" target="_blank">
+&nbsp;&nbsp;&nbsp;Department of Computer<br>
+ &nbsp;&nbsp;&nbsp;Science and Technology</a><div id=hover2>
+ &nbsp;&nbsp;&nbsp;201421308<br>
+ &nbsp;&nbsp;&nbsp;Kwon jun hong</div>
+ </p></font>
+</div>
+
+
+<p id=a> 출력   </p>
+<br><br><br>
+
+                      <fieldset id=field>
+                                <legend>Visitor</legend>
+								<form method=get action="Main.php">
+	                                <ul>
+		                                 <li> 이&nbsp;&nbsp;&nbsp;&nbsp;  름 &nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" placeholder="Enter name."></li><br>
+		                             	 <li> 이&nbsp;메&nbsp;일 &nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" placeholder="Enter your email."></li><br>
+			                             <li> <p>남기고싶은말 : </p><textarea name="opinion" cols="38" rows="7"> Please leave a message.</textarea></li><br>
+										 <li> <input type="submit" value="전송">
+										 
+	                                </ul>
+                                </form>
+	
+                       </fieldset>
+   
+ 
+
+  
+</body>
+
+</html>

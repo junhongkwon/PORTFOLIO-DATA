@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+      <title> 권준홍의 홈페이지 </title>
+       <h1 align=center id=h2> Welcome to the homepage.</h1>
+	  
+	  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	  
+<script>
+
+ function popupFunction() {
+    window.open("popup.html", "_blank", "top=100,left=100,width=510,height=510"); 
+    }
+  
+  
+ function DateFunction(){
+ var day2 = new Date();
+
+
+ var a = ("Today is " + day2.toDateString() + " 입니다." + "<br>" + "행복한 하루 보내세요!");
+ document.getElementById("day3").innerHTML=a
+}
+
+$(document).ready(function(){
+    $("#td1").hover(function(){
+        $(this).animate({"width":"15%","height":"15%"});
+    },
+    function(){
+        $(this).css({"width":"10%","height":"10%"});
+    }); 
+  
+});
+
+$(document).ready(function(){
+    $("#td3").hover(function(){
+        $(this).animate({"width":"15%","height":"15%"});
+    },
+    function(){
+        $(this).css({"width":"10%","height":"10%"});
+    }); 
+  
+});
+
+$(document).ready(function(){
+    $("#td5").hover(function(){
+        $(this).animate({"width":"15%","height":"15%"});
+    },
+    function(){
+        $(this).css({"width":"10%","height":"10%"});
+    }); 
+  
+});
+
+
+$(document).ready(function(){
+    $("#h2").hover(function(){
+        $(this).css({"color":"white","font-weight":"bold","font-size":"35px"});
+    },
+    function(){
+        $(this).css({"color":"black","font-weight":"normal","font-size":"30px"});
+    }); 
+  
+});
+
+
+
+
+
+$(document).ready(function(){
+    $("#button2").click(function(){
+        $("#td1").fadeToggle(1000);
+        $("#td2").fadeToggle(2000);
+        $("#td3").fadeToggle(3000);
+		$("#td4").fadeToggle(4000);
+		$("#td5").fadeToggle(5000);
+		$("#td6").fadeToggle(6000);
+    });
+});
+
+
+
+
+
+
+</script>
+	  
+	  
+	  
+	   
+<style>
+    a{text-decoration :none;	  
+	  }
+				
+    table {width:90%;
+	       border-collapse:collapse;	
+		   margin: 0 auto;
+           border-bottom:1px solid white;
+           	   
+	       }		
+	td {width:10%; line-height:30px; text-align:center;	 
+	    font-size:25px;
+        color:white;	
+       }
+	a:hover{background-color:white;	         
+			 padding-left:25px;
+             padding-right:25px;	
+	          
+	        }
+	body {font-size:13pt; font-family:Lucida Console; margin:auto;
+	     }		 
+    /* html { background:url(IMAGE/indexBack.jpg) ;
+	     } */
+	
+	#day3{position:absolute;
+	     right:130px;
+		 top:30px;
+		 }
+	
+	#button2{position:absolute;
+	         left:270px;
+		     top:30px;
+			 padding:15px 15px 15px 15px; 
+	        }
+	 
+	
+	
+</style>	
+</head>
+<br><br>
+<body onload=popupFunction();>
+
+<button id=button2> 메인메뉴 보이기/감추기 </button>
+<div onclick=DateFunction() id=day3 >오늘의 날짜를 보시려면 클릭하세요!</div>
+<table>
+      <tr>
+	     <div id=div2>
+          <td id=td1><a href="index.html"><font color=#333333;>Home</font></a></td>
+		  <td id=td2><a href="Profile.html" target=myframe1><font color=#333333;>Profile</font></a></td>		  
+		  <td id=td3><a href="Future.html" target=myframe1><font color=#333333;> Future  </font></a></td>
+		  <td id=td4><a href="Interest.html" target=myframe1><font color=#333333;> Interest</font></a></td>
+          <td id=td5><a href="Favorite.html" target=myframe1><font color=#333333;>Favorite</font></a></td>
+		  <td id=td6><a href="Travel.html" target=myframe1><font color=#333333;> Travel </font></a></td>
+         </div>
+
+	 </tr>
+
+ </table>
+ 
+ 
+ 
+       
+<br><br><br>
+
+<iframe name=myframe1 src="Main.html" width=100% height=800  frameborder="0"></iframe>
+
+
+
+
+
+
+</body>
+</html>
