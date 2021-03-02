@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Typing game</h1>
+        
+    </div>
+    <div class="how">
+        <h1 class="howWord">?</h1>
+        <p class='word'>제시된 단어를 입력하신 후 엔터키를 입력하세요!</p>
+    </div>
+    <div class="full"><h1 class="fullScreen" onclick=docFullCloseFunction()>➕</h1></div>
+    <!-- <div class='word-preview'>
+        Random
+    </div> -->
+    <div class="word-display">
+        Dream    
+    </div>
+
+    <div class="word-completed-display">
+            
+    </div>
+    <div class="word-input-box" >
+        <input type="text" class="word-input" placeholder="enter a word"/>
+    </div>
+    <div class="game-info">
+        <div>
+            남은시간 : <span class="time">0</span>초
+        </div>
+        
+        <div>
+            흭득점수 : <span class="score">0</span>점
+        </div>
+        <div>
+            틀린횟수 : <span class="incorrect">0</span>회
+        </div>
+        <div>
+            진행도 : <span class="processivity">0</span>%
+        </div>
+        
+    </div>
+        <button class="button loading" onclick=run() 
+                                       onMouseOver=buttonUpSize(button)
+                                       onMouseOut=buttonCurrentSize(button)>게임을 불러오는중...</button>
+
+        <button class="button buttonTwo modeChange"  onclick=modeChange()
+        onMouseOver=buttonUpSize(buttonTwo)
+        onMouseOut=buttonCurrentSize(buttonTwo)>
+        한/영 모드 변환
+        </button>
+                             
+        <button class="button buttonThree exit"    
+        onclick=winClose() 
+        onMouseOver=buttonUpSize(buttonThree)
+        onMouseOut=buttonCurrentSize(buttonThree)>
+        종료하기
+        </button>
+        
+      
+      
+                                 
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+    
+</body>
+</html>
